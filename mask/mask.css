@@ -7,15 +7,19 @@ body {
     font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, 'Noto Sans', sans-serif;
     margin: 0;
     min-height: 100%;
+}
+
+.content {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 h1 {
     color: white;
     font-size: 150px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -31,20 +35,58 @@ input {
     outline: none;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
 button {
     background-color: #c772da;
-    border: none;
     border-radius: 5px;
+    border: none;
     color: white;
     font-size: 20px;
     padding: 10px 20px;
     outline: none;
     cursor: pointer;
     transition: 0.3s ease;
+    margin: 10px;
+    opacity: 0.5;
+    cursor: default;
 }
 
-button:hover {
-    background-color: #a05cbf;
+.activeBtn {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.activeBtn:hover {
+    background-color: hsl(281, 44%, 55%);
+}
+
+footer {
+    border-top: 1px solid hsl(204, 14%, 30%);
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: hsl(204, 14%, 20%);
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.gradText {
+    margin-left: 5px;
+    background-image: -webkit-linear-gradient(0deg, #ff738e, #da6fe1, #997efa);
 }
 
 @media only screen and (max-width: 500px) {
