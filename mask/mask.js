@@ -2,7 +2,7 @@
  * Masks the URL input by encoding it and updating the input field with the masked URL.
  * Also copies the masked URL to the clipboard.
 */
-import { injectCSS, createNotif } from "https://raw.githack.com/LagTheSystem/EasyNotifs/main/easynotifs.js";
+import { injectCSS, createNotif } from "https://rawcdn.githack.com/LagTheSystem/EasyNotifs/01f635afb8e23c2359117a8ecc3ecabd8ba0f39c/easynotifs.js";
 
 injectCSS();
 
